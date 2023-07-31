@@ -13,7 +13,7 @@ to start the program and how to manage the game window:
 
 In a two-user interactive play:
 (a) Each of two users starts a game with his/her counterpart’s IP address and port as follows:
-java OnlineTicTacToe uw1-320-10 12345
+java OnlineTicTacToe IP_Address
 They do not care which of their programs would behave as a TCP client and a server. The users may
 be sitting at the same computer, which thus allows the IP address to be “localhost”.
 (b) After (at most) one TCP connection has been established, each program must decide which will play
@@ -31,7 +31,7 @@ should come out on the monitor.
 In a automated single-user automated play:
 (a) A user starts a game with his automated player’s IP address, as specifying the “auto” parameter as
 follows:
-java OnlineTicTacToe uw1-320-10 12345 auto
+java OnlineTicTacToe IP_ Address auto
 An auto play is initiated through JSCH (which uses port 22) and thus needs no port number. However,
 for an easier argument-parsing purpose, let OnlineTicTacToe still receive a port number as its second
 argument.
@@ -47,7 +47,7 @@ directory. The auto player is dumb enough to randomly choose an available button
 Graphics
 This online tic-tac-toe game needs to display a 3-by-3 graphics window with which the local user can play.
 Since the main purpose of this programming project is peer-to-peer communication using non-blocking
-accept and multithreads, you do not have to spend too much time for graphics. 
+accept and multithreads, we do not have to spend too much time for graphics. 
 
 
 Main() Verifies the arguments:
